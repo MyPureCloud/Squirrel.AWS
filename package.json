@@ -1,0 +1,26 @@
+{
+  "name": "squirrel.aws",
+  "version": "1.0.0",
+  "description": "Squirrel server implementation in aws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyPureCloud/Squirrel.AWS.git"
+  },
+  "author": "Kevin Glinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MyPureCloud/Squirrel.AWS/issues"
+  },
+  "homepage": "https://github.com/MyPureCloud/Squirrel.AWS#readme",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.20"
+  }
+}
