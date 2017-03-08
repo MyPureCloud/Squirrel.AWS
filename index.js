@@ -40,7 +40,6 @@ function compareSemVar(a,b){
 }
 
 exports.handler = function(event, context, callback) {
-    console.log("GOOO");
 
     var params = {
       Bucket: process.env.S3_BUCKET
@@ -49,6 +48,8 @@ exports.handler = function(event, context, callback) {
     if(typeof process.env.S3_PREFIX !== "undefined" && process.env.S3_PREFIX !== null && process.env.S3_PREFIX.length > 0 ){
         params.Prefix = process.env.S3_PREFIX;
     }
+
+    console.log(event);
 
     params = {
      Bucket: process.env.S3_BUCKET
@@ -96,7 +97,7 @@ exports.handler = function(event, context, callback) {
           }else{
               callback(null, {
                   "statusCode": 204, //or 202 with new version,
-                  "body": ""
+                  "body": "{}"
               });
 
           }

@@ -11,8 +11,12 @@ Update zip files should be in S3 with permissions that everyone can download it.
 
 ## Manually
 1) Manually deploy index.js as a lambda function
+2) Set the following environment variables for the lambda function
+   S3_BUCKET - The s3 bucket the updates are in
+   S3_PREFIX - (optional) the prefix to the update file name
 2) Create an s3 bucket, set the following environment variables
-3) Setup an API gateway method with a the integratino request setup for "Use Lambda Proxy integration"
+3) Setup an API gateway method with a the integration request setup for "Use Lambda Proxy integration"
+4) (optional but recommended) Setup a cloudfront distro and route53 to give your update url a 'known' path
 
 
 # Running Locally
